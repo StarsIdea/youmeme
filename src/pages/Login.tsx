@@ -1,8 +1,4 @@
 import {
-    FormControl,
-    InputLabel,
-    Input,
-    FormHelperText,
     Grid,
     Button,
     TextField,
@@ -41,7 +37,8 @@ const recaptchaRef = React.createRef<ReCAPTCHA>();
 
 function Login() {
     const classes = useStyles();
-    
+    const site_key = process.env.SITE_KEY;
+     
     return (
         <div className={classes.loginPage}>
             <Grid container>

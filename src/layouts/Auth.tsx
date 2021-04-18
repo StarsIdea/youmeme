@@ -51,7 +51,8 @@ function Auth({ logo, children }: IAuth) {
                     // alignItems="center"
                 >
                     <Grid container
-                        item xs={6} 
+                        item xs={12} 
+                        md={6}
                         className={classes.lSection}
                         direction="row"
                         justify="center"
@@ -60,7 +61,8 @@ function Auth({ logo, children }: IAuth) {
                         <img src={logo} className={classes.whiteLogo} alt="logo" />
                     </Grid>
                     <Grid container
-                        item xs={6} 
+                        item xs={12} 
+                        md={6}
                         className={classes.rSection}
                         direction="row"
                         justify="center"
