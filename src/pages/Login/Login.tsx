@@ -23,7 +23,7 @@ const useStyles = makeStyles({
     formSection: {
         backgroundColor: 'white', 
         padding: '40px',
-        margin: '30px 100px',
+        margin: '30px auto',
         paddingTop: '100px',
         maxWidth: '520px',
         ['@media (min-width:1024px)']: {
