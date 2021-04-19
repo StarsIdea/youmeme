@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import './index.css'
 import Auth from './layouts/Auth';
-import Login from './pages/Login';
+import Login from './pages/Login/Login';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Admin from './pages/Admin/index';
 

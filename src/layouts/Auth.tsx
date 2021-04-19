@@ -1,6 +1,5 @@
 import Grid from "@material-ui/core/Grid/Grid";
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import purple from '@material-ui/core/colors/purple';
 import { makeStyles } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
@@ -17,16 +16,16 @@ const theme = createMuiTheme({
 const useStyles = makeStyles({
     root: {
       height: '100vh',
-      maxWidth: '1440px',
       margin: 'auto',
     },
     whiteLogo: {
         filter: 'invert(1)',
-        width: '50%'
+        width: '50%',
+        maxWidth: '360px'
     },
     lSection: {
         backgroundColor: '#816ad6',
-        height: '100vh', 
+        height: '100vh',
         display:'flex'
     },
     rSection:{
@@ -48,7 +47,6 @@ function Auth({ logo, children }: IAuth) {
                     className={classes.root}
                     direction="row"
                     justify="center"
-                    // alignItems="center"
                 >
                     <Grid container
                         item xs={12} 
@@ -56,7 +54,6 @@ function Auth({ logo, children }: IAuth) {
                         className={classes.lSection}
                         direction="row"
                         justify="center"
-                        // alignItems="center"
                     >
                         <img src={logo} className={classes.whiteLogo} alt="logo" />
                     </Grid>
@@ -66,7 +63,6 @@ function Auth({ logo, children }: IAuth) {
                         className={classes.rSection}
                         direction="row"
                         justify="center"
-                        // alignItems="center"
                     >
                         { children }
                     </Grid>
