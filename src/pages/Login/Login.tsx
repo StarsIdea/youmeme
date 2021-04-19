@@ -194,7 +194,7 @@ function Login() {
                                         className={classes.formItem}
                                         helperText={
                                             errors.password && touched.password
-                                                ? 'Please valid password. One uppercase, one lowercase, one special character and no spaces'
+                                                ? 'Please valid password. One uppercase, one lowercase, one special character, 8 characters at least and no spaces'
                                                 : 'Enter your password'
                                         }
                                         error={
